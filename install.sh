@@ -39,7 +39,7 @@ if [[ $? -ne 0 ]]; then
 fi
 
 echo "mkdir -p /ot-node && mv /root/OT-2Nudes1Dockerless/ot-node/ /ot-node/$NODE_VERSION"
-mkdir -p /ot-node && mv /root/OT-2Nodes1Server/ot-node/ /ot-node/$NODE_VERSION
+mkdir -p /ot-node && mv /root/OT-2Nudes1DockSucker/ot-node/ /ot-node/$NODE_VERSION
 if [[ $? -ne 0 ]]; then
   exit 1
 fi
