@@ -10,7 +10,7 @@ else
   ufw allow 300$NODE_NUMBER && ufw allow 530$NODE_NUMBER && ufw allow 890$NODE_NUMBER && yes | ufw enable
 fi
 
-cp /root/OT-2Nudes1Dockerless/otnode.service /lib/systemd/system/$NODE_ID.service
+cp /root/OT-2Nudes1DockSucker/otnode.service /lib/systemd/system/$NODE_ID.service
 
 sed -i "s|otnodeX|$NODE_ID|g" /lib/systemd/system/$NODE_ID.service
 
