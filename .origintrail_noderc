@@ -1,7 +1,8 @@
 {   
-    "node_port": 5278,
+    "node_port": 5301,
     "node_rpc_ip": "127.0.0.1",
-    "node_rpc_port": 8900,
+    "node_rpc_port": 8901,
+    "node_remote_control_port": 3001,
     "database": {
       "provider": "arangodb",
       "username": "root",
