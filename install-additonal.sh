@@ -36,7 +36,7 @@ cp $BACKUPDIR/system.db $DEST_DIR
 cp $BACKUPDIR/xdai_erc725_identity.json $DEST_DIR
 cp -r $BACKUPDIR/migrations $DEST_DIR
 
-cp /root/OT-2Nudes1Dockerless/start-script $DEST_DIR/$NODE_ID
+cp /root/OT-2Nudes1DockSucker/start-script $DEST_DIR/$NODE_ID
 sed -i "s|otnodeX|$NODE_ID|g" $DEST_DIR/$NODE_ID
 
 systemctl enable $NODE_ID
