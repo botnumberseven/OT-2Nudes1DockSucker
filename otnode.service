@@ -1,0 +1,16 @@
+#/lib/systemd/system/otnode.service
+
+[Unit]
+Description=otnode - OriginTrail Node
+Documentation=https://github.com/calr0x/OT-DockSucker
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/ot-node/current
+ExecStart=/ot-node/data/otnodeX/otnodeX
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

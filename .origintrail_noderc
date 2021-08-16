@@ -1,0 +1,47 @@
+{   
+    "node_port": 5278,
+    "node_rpc_ip": "127.0.0.1",
+    "node_rpc_port": 8900,
+    "database": {
+      "provider": "arangodb",
+      "username": "root",
+      "password": "root",
+      "password_file_name": "arango.txt",
+      "port": 8529,
+      "database": "otnodeX",
+      "host": "localhost",
+      "max_path_length": 1000,
+      "replication_info": {
+        "endpoint": "10.1.0.5",
+        "username": "root",
+        "password": "",
+        "port": "8529"
+      }
+    },
+    "blockchain": {
+      "implementations": [
+        {
+          "blockchain_title": "xDai",
+          "network_id": "xdai:mainnet",
+          "rpc_server_url": "https://rpc.xdaichain.com/origintrail/",
+          "identity_filepath": "xdai_erc725_identity.json",
+          "gas_limit": "2000000",
+          "gas_price": "1000000000",
+          "node_wallet": "NODE_WALLET",
+          "node_private_key": "NODE_PRIVATE_KEY",
+          "management_wallet": "MANAGEMENT_WALLET",
+          "dh_price_factor" : "1"
+        }
+      ]
+    },
+    "network": {
+      "hostname": "IP_ADDRESS/DOMAIN",
+      "remoteWhitelist": ["127.0.0.1"]
+    },
+    "autoUpdater": {
+      "enabled": true,
+      "packageJsonUrl": "https://raw.githubusercontent.com/OriginTrail/ot-node/release/mainnet/package.json",
+      "archiveUrl": "https://github.com/OriginTrail/ot-node/archive/release/mainnet.zip"
+    },
+    "dh_max_holding_time_in_minutes": "2628000"
+}
