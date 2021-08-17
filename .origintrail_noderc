@@ -31,6 +31,7 @@
           "node_wallet": "NODE_WALLET",
           "node_private_key": "NODE_PRIVATE_KEY",
           "management_wallet": "MANAGEMENT_WALLET",
+          "initial_deposit_amount": "5000000000000000000000",
           "dh_price_factor" : "1"
         }
       ]
