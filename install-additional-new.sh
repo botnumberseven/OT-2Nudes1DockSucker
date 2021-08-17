@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+
 NODE_NAME=otnode
 NODE_NUMBER=CHANGE
 NODE_ID=$NODE_NAME$NODE_NUMBER
