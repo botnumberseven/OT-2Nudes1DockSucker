@@ -3,6 +3,7 @@
 NODE_NAME=otnode
 NODE_NUMBER=CHANGE
 NODE_ID=$NODE_NAME$NODE_NUMBER
+DEST_DIR=/ot-node/data/$NODE_ID
 
 if [[ NODE_NUMBER -eq 10 ]]; then
   ufw allow 3010 && ufw allow 5310 && ufw allow 8910 && ufw enable
@@ -10,7 +11,7 @@ else
   ufw allow 300$NODE_NUMBER && ufw allow 530$NODE_NUMBER && ufw allow 890$NODE_NUMBER && yes | ufw enable
 fi
 
-cd /opt
+mkdir -p $DEST_DIR
 
 cp /root/OT-2Nudes1DockSucker/otnode.service /lib/systemd/system/$NODE_ID.service
 
