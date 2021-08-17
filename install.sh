@@ -1,17 +1,6 @@
 #!/bin/bash
 
-#source /root/OT-Settings/config.sh
-
-NODE_NAME=otnode
-NODE_NUMBER=REPLACE
-NODE_ID=$NODE_NAME$NODE_NUMBER
-
-## Install the node and setup the environment
-
-if [[$NODE_NUMBER == "replace "]]; then
-  echo "Edit NODE_NUMBER to be the correct number of the node being installed."
-  exit 1
-fi
+# Install the node and setup the environment
 
 apt update
 
