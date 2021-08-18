@@ -13,7 +13,7 @@ fi
 
 mkdir -p $DEST_DIR
 
-cp /root/.origintrail_noderc $DEST_DIR
+cp /root/origintrail_noderc $DEST_DIR
 cp /root/OT-2Nudes1DockSucker/otnode.service /lib/systemd/system/$NODE_ID.service
 
 sed -i "s|otnodeX|$NODE_ID|g" /lib/systemd/system/$NODE_ID.service
